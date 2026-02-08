@@ -1,56 +1,60 @@
-# Frontend Mentor - Advice generator app solution
+# Advice Generator | Type-Safe API Interface 🎲
+A high-performance web application that interfaces with the Advice Slip JSON API. This project demonstrates an advanced handle on Asynchronous TypeScript, data-driven UI updates, and a responsive design system managed through Modular SCSS.
 
-This is a solution to the [Advice generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+## 📸 Preview
 
-## Table of contents
+![Professional UI of the Advice Generator app featuring a dark-themed card with neon green accents and a central quote.](./images/screenshot.png)
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+## 🚀 Technical Highlights
 
-## Overview
+- **Type-Safe API Integration:** Leverages TypeScript Interfaces to strictly define the API response structure, preventing runtime errors during data fetching.
+- **Asynchronous Orchestration:** Implemented a robust Fetch API handler using `async/await` to manage real-time data retrieval.
+- **Dynamic DOM Management:** TypeScript ensures that DOM element selection and manipulation are handled with strict null-checking and type-casting.
+- **Styling Architecture:** Modular SCSS following the BEM (Block Element Modifier) methodology for encapsulated, maintainable styles.
+- **Modern CSS:** Utilises CSS Custom Properties for theme tokens and high-contrast interactive states.
 
-### The challenge
+## 🏗️ Architectural Overview
 
-Users should be able to:
+### 1. TypeScript & Asynchronous Logic
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Generate a new piece of advice by clicking the dice icon
+The application logic is built for stability and predictability:
+- **Interface Definition:** Defined a clear `AdviceResponse` interface to map the incoming JSON data (ID and Advice string) to the UI.
+- **Error Handling:** Implemented `try/catch` blocks within asynchronous functions to gracefully handle network failures or API downtime.
+- **Event Handling:** TypeScript manages the dice button interaction, ensuring the generator is throttled appropriately to align with API rate limits.
 
-### Screenshot
+### 2. Design System (SCSS + BEM)
 
-![](./images/screenshot.png)
+The visual layer is engineered for high-end aesthetic fidelity:
+- **Neon Aesthetic:** Custom-engineered box-shadows and transitions for the dice trigger, utilising the high-contrast "Neon Green" palette.
+- **Asset Art Direction:** Uses dynamic asset swapping for the "pattern divider" to ensure the visual rhythm remains consistent across mobile and desktop breakpoints.
+- **Typography:** Precise implementation of the 'Manrope' typeface (Weights 800) for maximum legibility in a quote-centric layout.
 
-### Links
+### 3. Accessibility & UX
 
-- Solution URL: [https://github.com/seanbuckle/Advice-generator-app](https://github.com/seanbuckle/Advice-generator-app)
-- Live Site URL: [https://seanbuckle.github.io/Advice-generator-app/](https://seanbuckle.github.io/Advice-generator-app/)
+- **Focus & Hover States:** Interactive elements are optimised with clear visual cues for keyboard and touch users.
+- **Semantic Markup:** Uses the `<q>` tag for the advice text and `<main>` for the card container to provide the best possible experience for assistive technologies.
+- **Performance:** Optimised for a near-instant Largest Contentful Paint (LCP) through lightweight assets and minimal execution overhead.
 
-## My process
+## 🛠️ Built With
 
-### Built with
+## 🔗 Live Implementation
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- SCSS/SASS CSS preprocessor
+- **Live Site:** https://advice-generator-app.seanbuckle.com
 
+- **Source Code:** https://github.com/seanbuckle/advice-generator-app
 
-### Useful resources
+## 👨‍💻 Author
 
-- [web.dev](https://web.dev)
-- [MDN Web Docs](https://developer.mozilla.org)
-- [1-line layouts](https://1linelayouts.glitch.me/)
+**Sean Buckle**
 
-## Author
-- Frontend Mentor - [@seanbuckle](https://www.frontendmentor.io/profile/seanbuckle)
-- Twitter - [@seanlbuckle](https://www.twitter.com/seanlbuckle)
-- LinkedIn - [Sean Buckle](https://www.linkedin.com/in/seanbuckle/)
+[Frontend Mentor Profile](https://www.frontendmentor.io/profile/seanbuckle)
+
+[LinkedIn](https://www.linkedin.com/in/seanbuckle)
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/seanbuckle/advice-generator-app/blob/main/LICENSE) file for details.
+
+---
+
+***Note: This project was built as a solution to a Frontend Mentor challenge.***
